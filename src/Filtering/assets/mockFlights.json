@@ -1,0 +1,62 @@
+[
+    {
+        "id": 0,
+        "airline": "IranAir",
+        "price": 12000000,
+        "flightTime": "2023-12-28T17:45:00"
+    },
+    {
+        "id": 1,
+        "airline": "Mahan",
+        "price": 22000000,
+        "flightTime": "2023-12-28T17:45:00"
+    },
+    {
+        "id": 2,
+        "airline": "Mahan",
+        "price": 22000000,
+        "flightTime": "2023-12-28T17:45:00"
+    },
+    {
+        "id": 3,
+        "airline": "Mahan",
+        "price": 22000000,
+        "flightTime": "2023-12-28T17:45:00"
+    },
+    {
+        "id": 4,
+        "airline": "Aseman",
+        "price": 6000000,
+        "flightTime": "2023-12-28T17:45:00"
+    },
+    {
+        "id": 5,
+        "airline": "Aseman",
+        "price": 6000000,
+        "flightTime": "2023-12-28T17:45:00"
+    },
+    {
+        "id": 6,
+        "airline": "Aseman",
+        "price": 6000000,
+        "flightTime": "2023-12-28T17:45:00"
+    },
+    {
+        "id": 7,
+        "airline": "Emirates",
+        "price": 32000000,
+        "flightTime": "2023-12-28T17:45:00"
+    },
+    {
+        "id": 8,
+        "airline": "Emirates",
+        "price": 32000000,
+        "flightTime": "2023-12-28T17:45:00"
+    },
+    {
+        "id": 9,
+        "airline": "Homa",
+        "price": 2000000,
+        "flightTime": "2023-12-28T17:45:00"
+    }
+]
