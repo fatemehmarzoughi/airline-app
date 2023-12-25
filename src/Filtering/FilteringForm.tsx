@@ -32,7 +32,7 @@ export const FilteringForm = React.memo(() => {
           <div className="relative">
             <select
               className="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              id="grid-state"
+              id="flightTime"
             >
               <option>6am - 12pm</option>
               <option>12pm - 6pm</option>
@@ -55,9 +55,9 @@ export const FilteringForm = React.memo(() => {
         <div className="">
           <Label title="Airline" />
           {mockAirlines.map((airline) => (
-            <div className="flex items-center mt-4">
+            <div key={airline.id} className="flex items-center mt-4">
               <input
-                id="default-checkbox"
+                id={`airline-${airline.name}`}
                 type="checkbox"
                 value=""
                 className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
