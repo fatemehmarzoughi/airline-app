@@ -1,10 +1,19 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { SideMenu } from "./tools/sideMenu";
 import { AllFlights } from "./AllFlights";
 import { FilteringForm } from "./FilteringForm";
+import { useNavigate } from "react-router-dom";
 
 export const App = React.memo(() => {
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
+  const navigate = useNavigate();
+
+  const reset = useCallback(() => {
+    navigate({
+      pathname: "/",
+      search: "",
+    });
+  }, [navigate]);
 
   return (
     <div className="w-4/5 m-auto">
@@ -18,7 +27,10 @@ export const App = React.memo(() => {
         >
           Filter Airlines
         </button>
-        <a className="text-blue-700 hover:underline focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">
+        <a
+          onClick={reset}
+          className="text-blue-700 hover:underline focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800"
+        >
           Reset
         </a>
       </header>
